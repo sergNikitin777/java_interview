@@ -51,3 +51,51 @@
 - executor service
 - spring многопоточ
 - spring cloud
+  
+  public class Application {
+
+    public static void main(String[] args) {
+        Integer x = 0;
+        increment(x);
+        System.out.println(x);
+    }
+
+    private static void increment(Integer x) {
+        x = x + 10;
+    }
+
+}
+
+
+if (obj instanceof Student) и if (getClass() == obj.getClass())
+
+
+
+
+
+package interview;
+
+public class Application implements A, B {
+    
+}
+
+interface A {
+    default void work() {}
+}
+
+interface B {
+    default void work() {}
+}
+
+
+Stream.of("d2", "a2", "b1", "b3", "c")
+    .filter(s -> {
+        System.out.println("filter: " + s);
+        return true;
+    })
+    .forEach(s -> System.out.println("forEach: " + s));
+    
+    // filter d2
+    // foreach d2
+    // filter a2
+    // foreach a2
