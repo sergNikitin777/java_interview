@@ -51,7 +51,7 @@
 - executor service
 - spring многопоточ
 - spring cloud
-  
+ <code>  
   public class Application {
 
     public static void main(String[] args) {
@@ -65,14 +65,13 @@
     }
 
 }
+</code>
 
-
+<code>
 if (obj instanceof Student) и if (getClass() == obj.getClass())
+</code>
 
-
-
-
-
+<code>
 package interview;
 
 public class Application implements A, B {
@@ -86,8 +85,9 @@ interface A {
 interface B {
     default void work() {}
 }
+</code>
 
-
+<code>
 Stream.of("d2", "a2", "b1", "b3", "c")
     .filter(s -> {
         System.out.println("filter: " + s);
@@ -99,3 +99,4 @@ Stream.of("d2", "a2", "b1", "b3", "c")
     // foreach d2
     // filter a2
     // foreach a2
+</code>
